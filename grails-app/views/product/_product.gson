@@ -1,0 +1,7 @@
+import com.example.Product
+
+model {
+    Product product
+}
+
+json g.render(product)
