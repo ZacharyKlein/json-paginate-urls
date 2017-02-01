@@ -3,6 +3,14 @@ package com.example
 class UrlMappings {
 
     static mappings = {
+
+//TODO: uncomment this mapping to allow pagination links to fall back to default URL pattern
+//        "/$controller/$action?/$id?(.$format)?"{
+//            constraints {
+//                // apply constraints here
+//            }
+//        }
+
         delete "/$controller/$id(.$format)?"(action:"delete")
         get "/$controller(.$format)?"(action:"index")
         get "/$controller/$id(.$format)?"(action:"show")
